@@ -20,5 +20,63 @@
 }
 
 /* exercise 4 */
+.ex-4:hover{
+    background-color: transparent;
+    border-color: transparent;
+}
 
 /* exercise 5 */
+.ex-5:hover{
+    transform: scale(2.5);
+}
+
+.ex-5:active{
+    transform: scale(0.5);
+}
+
+/* exercise 6 */
+.ex-6 img:hover{
+    filter: grayscale(1);
+}
+
+/* exercise 7 */
+.ex-7 img:hover{
+    filter: grayscale(1);
+    filter: contrast(0.5);
+    border-radius: 6px;
+}
+
+/* exercise 8 */
+.ex-8 img{
+    transform: scale(0.6);
+}
+
+.ex-8 img:hover{
+    transform: scale(1);
+}
+
+/* exercise 9 */
+.ex-9{
+    animation: 1s loading linear infinite;
+}
+
+/* exercise 10 */
+.ex-10:hover{
+    animation: 1s loading-return linear infinite;
+}
+
+/* exercise 11 */
+.ex-10:hover{
+    animation: 1s loading-return linear infinite;
+}
+
+
+@keyframes loading{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes loading-return{
+    0%{transform: rotate(0deg);}
+    75%{transform: rotate(360deg);}
+}
