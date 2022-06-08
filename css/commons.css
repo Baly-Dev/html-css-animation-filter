@@ -1,0 +1,47 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* globals */
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #262626;
+}
+
+/* positioning */
+.boxed{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* alignments */
+.t-center{
+    text-align: center;
+}
+
+/* padding "multipli di 2" */
+.p-2{
+    padding: 2%;
+}
+
+.p-4{
+    padding: 4%;
+}
+
+.py-2{
+    padding: 2% 0%;
+}
+
+
+
+/* margin "multipli di 2" */
+.mb-2{
+    margin-bottom: 2%;
+}
+
+.mb-4{
+    margin-bottom: 4%;
+}
