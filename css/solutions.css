@@ -53,6 +53,7 @@
 
 .ex-8 img:hover{
     transform: scale(1);
+    border-radius: 6px;
 }
 
 /* exercise 9 */
@@ -82,8 +83,6 @@
 .ex-12 .btn:hover .empty-right{
     animation: 2s border-bottom-infinte linear infinite;
 }
-
-
 
 /* keyframes */
 @keyframes loading{

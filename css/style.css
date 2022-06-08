@@ -51,14 +51,14 @@
     position: relative;
 }
 
-.empty-left, .empty-right, .empty{
+.empty-left, .empty-right{
     height: 10px;
     width: 60px;
     background-color: #efefef;
     position: absolute;
 }
 
-.empty-left, .empty{
+.empty-left{
     top: -8%;
     left: 15%;
 }
