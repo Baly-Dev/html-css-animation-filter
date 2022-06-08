@@ -66,8 +66,17 @@
 }
 
 /* exercise 11 */
-.ex-10:hover{
-    animation: 1s loading-return linear infinite;
+.ex-11 .btn:hover .empty-left{
+    animation: 1s border-top linear;
+}
+
+.ex-11 .btn:hover .empty-right{
+    animation: 1s border-bottom linear;
+}
+
+/* exercise 12 */
+.ex-12 .btn:hover .empty{
+    animation: 1s border-top-infinte linear infinite;
 }
 
 
@@ -79,4 +88,43 @@
 @keyframes loading-return{
     0%{transform: rotate(0deg);}
     75%{transform: rotate(360deg);}
+}
+
+@keyframes border-top{
+    0%{left: 15%;}
+    50%{left: calc(100% - 35%);}
+    100%{left: 15%;}
+}
+
+@keyframes border-bottom{
+    0%{right: 15%;}
+    50%{right: calc(100% - 35%);}
+    100%{right: 15%;}
+}
+
+@keyframes border-top-infinte{
+    0% {
+        left: 10%;
+        top: -8%;
+    }
+    30% {
+        left: calc(100% - 8%);
+        top: -8%
+    }
+    45% {
+        left: calc(100% - 8%);
+        top: 95%;
+    }
+    75% {
+        left: 0;
+        top: 95%;
+    }
+    90% {
+        left: -15px;
+        top: -8%;
+    }
+    100% {
+        left: 10%;
+        top: -8%;
+    }
 }

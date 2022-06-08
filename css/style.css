@@ -39,3 +39,32 @@
     border: 10px solid orange;
     border-left: 10px solid #cfcfcf;
 }
+
+.btn{
+    border: 3px solid orange;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+}
+
+.empty-left, .empty-right, .empty{
+    height: 10px;
+    width: 60px;
+    background-color: #efefef;
+    position: absolute;
+}
+
+.empty-left, .empty{
+    top: -8%;
+    left: 15%;
+}
+
+.empty-right{
+    bottom: -8%;
+    right: 15%;
+}
+
