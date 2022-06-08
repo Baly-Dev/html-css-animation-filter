@@ -75,11 +75,17 @@
 }
 
 /* exercise 12 */
-.ex-12 .btn:hover .empty{
-    animation: 1s border-top-infinte linear infinite;
+.ex-12 .btn:hover .empty-left{
+    animation: 2s border-top-infinte linear infinite;
+}
+
+.ex-12 .btn:hover .empty-right{
+    animation: 2s border-bottom-infinte linear infinite;
 }
 
 
+
+/* keyframes */
 @keyframes loading{
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
@@ -126,5 +132,32 @@
     100% {
         left: 10%;
         top: -8%;
+    }
+}
+
+@keyframes border-bottom-infinte{
+    0% {
+        bottom: -8%;
+        right: 20%;
+    }
+    25% {
+        right: calc(100% - 8%);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 8%);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        bottom: -8%;
+        right: -15px;
+    }
+    100% {
+        bottom: -8%;
+        right: 20%;
     }
 }
